@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommender</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand text-light" href="#">Movie Recommender</a>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 bg-light no-padding-margin">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="recommender-by-genre" href="#">Recommender by Genre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="recommender-by-rating" href="#">Recommender by Rating</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div id="content-area">
+                    <div id="rating-area" class="genre-selector my-4">
+                        <h2>Step 1: Rate as many movies as possible</h2>
+                        <div id="movies-list" class="row"></div>
+                        <h2>Step 2: Discover movies you might like</h2>
+                        <button id="get-recommendations" class="btn btn-primary">Click here to get your recommendations</button>
+                    </div>
+                </div>
+                <div id="recommendation-results" class="mt-2">
+                    <!-- Recommendation results will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.7.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

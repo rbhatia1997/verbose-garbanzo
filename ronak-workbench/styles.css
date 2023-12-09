@@ -1,0 +1,183 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #343a40; /* Darker background for the navbar */
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+.sidebar-sticky {
+    background-color: #2c3e50; /* Dark background for the sidebar */
+    min-height: 100vh;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    margin: 10px 0;
+}
+
+.nav-link:hover {
+    background-color: #1c1e22 !important;
+}
+
+.content-area {
+    padding: 20px;
+    background-color: #f8f9fa; /* Lighter background for content */
+}
+
+.genre-selector {
+    background-color: #ffffff; /* Card-like background for form */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+#recommendations-results p {
+    background-color: #e9ecef; /* Slightly gray background for each recommendation */
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.no-padding-margin {
+    margin: 0;
+    padding: 0;
+}
+
+label.custom-label {
+    font-size: 30px;
+    color: #333; 
+    margin-bottom: 10px;
+}
+
+h2.custom-label {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.star {
+    cursor: pointer;
+    color: grey;
+}
+
+.star:hover {
+    color: gold;
+}
+
+/* Assuming you want to color the rated stars in gold */
+.star.rated {
+    color: gold;
+}
+
+#movies-list {
+    max-height: 600px; /* Adjust to your preference */
+    overflow-y: auto;
+}
+
+.movie-poster {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.rating {
+    cursor: pointer;
+    /* Add more styling for your stars here */
+}
+
+.step {
+    margin-bottom: 20px; /* Spacing between steps */
+}
+
+
+/* Ensure that images do not exceed their container */
+.card-img-top {
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+  }
+  
+  .card-deck .card {
+    flex: 1 0 auto; /* Flex property to ensure cards take up equal width */
+  }
+  
+  .card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  #recommendation-results {
+    overflow-x: auto; 
+  }
+  
+
+  /* Ensure that the recommendation results are not wider than the content area */
+#recommendation-results {
+    max-width: 100%; /* Ensures the container does not exceed the width of its parent */
+    padding: 0 15px; /* Adjust padding to match the content area if needed */
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+}
+
+#recommendation-results .movie {
+    display: inline-block; /* Allows multiple movies to sit in a row */
+    vertical-align: top; /* Aligns the tops of the inline-block elements */
+    margin-right: 15px; /* Space between movie cards */
+    width: calc(25% - 15px); /* Adjust the width of the movie cards (4 in a row) */
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+}
+
+@media (max-width: 992px) { /* Adjusts when the screen size is less than 992px */
+    #recommendation-results .movie {
+        width: calc(33.333% - 15px); /* 3 in a row */
+    }
+}
+
+@media (max-width: 768px) { /* Adjusts when the screen size is less than 768px */
+    #recommendation-results .movie {
+        width: calc(50% - 15px); /* 2 in a row */
+    }
+}
+
+@media (max-width: 576px) { /* Adjusts when the screen size is less than 576px */
+    #recommendation-results .movie {
+        width: 100%; /* 1 in a row */
+        margin-right: 0; /* Removes margin on the smallest screens */
+    }
+}
+
+/* Additional styles to make the cards look better */
+.movie .card {
+    margin-bottom: 15px; /* Space between rows of cards */
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#recommendation-results {
+    padding-top: 30px; /* Creates space above the container */
+    max-height: 800px; /* Increased height */
+    width: 80%; /* Reduced width */
+    overflow-y: auto; /* Enables vertical scrolling if content overflows */
+    margin: 0 auto; /* Centers the container */
+    background-color: #f8f9fa; /* Background color of the container */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Subtle shadow */
+    /* Additional padding on all sides if needed */
+    padding: 15px;
+}
+
+#rating-get-recommendations {
+    margin-bottom: 30px; 
+}
