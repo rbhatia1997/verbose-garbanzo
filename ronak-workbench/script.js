@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.getElementById('recommender-by-rating').addEventListener('click', function() {
-        fetch('http://127.0.0.1:5000/movies')
+        fetch('https://cs598-shiao-bhatia-pan-proj4.azurewebsites.net/movies')
             .then(response => response.json())
             .then(movies => {
                 displayMovies(movies);
@@ -67,7 +67,7 @@ function displayMovies(movies) {
             fullRatings['m' + i] = userRatings[i] ? userRatings[i] : NaN;
         }
     
-        fetch('http://127.0.0.1:5000/user_recommendations', {
+        fetch('https://cs598-shiao-bhatia-pan-proj4.azurewebsites.net/user_recommendations', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -172,7 +172,7 @@ function initGenreRecommender() {
 function getRecommendations() {
     const selectedGenre = document.getElementById('genre-select').value;
     
-    fetch(`http://127.0.0.1:5000/recommendations?genre=${encodeURIComponent(selectedGenre)}`)
+    fetch(`https://cs598-shiao-bhatia-pan-proj4.azurewebsites.net/recommendations?genre=${encodeURIComponent(selectedGenre)}`)
         .then(response => response.json())
         .then(data => {
             const resultsContainer = document.getElementById('recommendations-results');
