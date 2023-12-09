@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/ac4bd2c4-5c80-4ed9-a079-f346ad597cd9/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/cs598-shiao-bhatia-pan-proj4",
+    "appService.deploySubpath": "ronak-workbench"
+}
