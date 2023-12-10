@@ -23,6 +23,7 @@ function displayMovies(movies) {
             <div class="row">
                 <div class="col">
                     <h2>Step 1: Rate As Many Movies as Possible</h2>
+                    <h5> Please note: Star Ratings are not shown/kept on UI, but are Updating!</h5>
                 </div>
             </div>
             <div id="movies-list" class="row"></div>
@@ -31,6 +32,7 @@ function displayMovies(movies) {
             <div class="row">
                 <div class="col">
                     <h2>Step 2: Get Personalized Movie Recommendations</h2>
+                    <h5> Please note: Recommendations may take up to 15 Seconds to Show!</h5>
                 </div>
             </div>
             <div class="row">
